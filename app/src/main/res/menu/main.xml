@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+
+        />
+    <item
+
+        android:title="History"
+        android:id="@+id/history"
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        />
+    <item
+
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        />
+    <item
+
+        android:title="Book Now"
+        android:id="@+id/location"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        />
+
+
+
+
+
+</menu>

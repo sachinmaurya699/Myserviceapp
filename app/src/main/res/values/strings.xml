@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ServiceApp</string>
+    <string name="image">Start Bick Servicing</string>
+    <string name="hint">Ente 10 digits Mobile Number</string>
+    <string name="hint1">Continue</string>
+    <string name="hint2">40dp</string>
+    <string name="hint3">Name</string>
+    <string name="hint4">Enter Your Name</string>
+    <string name="hint5">Email Address</string>
+    <string name="hint6">Enter Your Email Address</string>
+    <string name="hint7">Referral code (optional)</string>
+    <string name="signup">Signup</string>
+    <string name="next">Next</string>
+    <string name="show">Show no</string>
+    <string name="submit">submit</string>
+    <string name="otp">We have sent a "4 digit OTP" on</string>
+    <string name="otp1">Please enter the OTP below to complete the verification process.</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
