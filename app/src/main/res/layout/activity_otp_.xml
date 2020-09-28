@@ -4,131 +4,138 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Otp_Activity">
+    android:layout_height="match_parent">
 
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="373dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_contact_number"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/editText_showNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/_8601502970"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView16" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="321dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/sendnumber"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_showNumber" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="0dp"
+        android:id="@+id/editText_otp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:digits="0123456789"
         android:ems="10"
-        android:layout_margin="17dp"
-        android:padding="20dp"
-        android:importantForAutofill="no"
-        android:hint="@string/show"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_otpsent"
-        app:layout_constraintVertical_bias="0.13999999" />
-
-    <EditText
-        android:id="@+id/editText_firstotp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/design"
-        android:ems="2"
-        android:importantForAutofill="no"
+        android:hint="@string/enter_the_otp1"
         android:inputType="number"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText_secondotp"
-        app:layout_constraintEnd_toStartOf="@+id/editText_secondotp"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText_secondotp"
-        tools:ignore="LabelFor" />
-
-    <EditText
-        android:id="@+id/editText_secondotp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="2"
-        tools:ignore="LabelFor"
-        android:importantForAutofill="no"
-        android:background="@drawable/design"
-        android:inputType="number"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText1"
-        app:layout_constraintEnd_toStartOf="@+id/editText1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText_firstotp"
-        app:layout_constraintTop_toTopOf="@+id/editText1" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="2"
-        tools:ignore="LabelFor"
-        android:importantForAutofill="no"
-        android:background="@drawable/design"
-        android:inputType="number"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText_fourthotp"
-        app:layout_constraintEnd_toStartOf="@+id/editText_fourthotp"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText_secondotp"
-        app:layout_constraintTop_toTopOf="@+id/editText_fourthotp"
-    />
-
-
-    <EditText
-        android:id="@+id/editText_fourthotp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/design"
-        android:ems="2"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_otpbelow"
-        app:layout_constraintVertical_bias="0.120000005"
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/textView_otpsent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text='@string/show'
-        android:textSize="20sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06999999" />
-
-    <TextView
-        android:id="@+id/textView_otpbelow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="@string/show"
-        android:textSize="15sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.16000003" />
+        android:maxLength="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <Button
-        android:id="@+id/button11"
-
-        android:layout_width="0dp"
+        android:id="@+id/rsend"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submit"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbackgroundnew"
+        android:text="@string/resend"
         android:textColor="@android:color/background_light"
-        android:background="@android:color/holo_red_dark"
-        android:layout_margin="20dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrect_otp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsend" />
+
+    <TextView
+        android:id="@+id/text_igree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/i_agree_to_terms_and_conditions"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsend"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <Button
+        android:id="@+id/button_otpsubmit"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_igree"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonbackgroundnew"
+        android:padding="5dp"
+        android:text="@string/submit1"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Otp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_otpbelow" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71000004" />
+
+    <TextView
+        android:id="@+id/incorrect_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Incorrect otp"
+        android:textColor="#F81A1A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_otp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,36 +1,115 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath "gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8"
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.1"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+        lintOptions {
+            disable 'InvalidPackage'
+            checkReleaseBuilds false //<- add this line
+        }
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
     defaultConfig {
+
         applicationId "com.sossolution.serviceapp"
-        minSdkVersion 17
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 4
+        versionName "4.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                onesignal_app_id: '9277e3d3-1aa4-4ed4-9dce-fe427a27d687',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.android.support:design:29.0.0'
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    /*///smsverify ...................*/
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.android.support:design:30.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-config:19.2.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    /*/......................otp enter................/*/
 
     /*<.........................map..............>*/
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+
+
+    /*..........// add the Firebase SDK for Google Analytics..........*/
+
+    /* ..................carview................*/
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+    /* .....................popup................*/
+
+    implementation 'com.razorpay:checkout:1.5.13'
+    /*................image circle..........*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    /*..................image slider.............*/
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    /*...................sms get..............*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //retrofit api
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.4'
+    implementation 'net.orfjackal.retrolambda:retrolambda:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //page refresh
+    implementation 'com.google.android.play:core:1.8.0'
+    implementation  'com.razorpay:razorpay-java:1.3.8'
+    implementation 'com.razorpay:checkout:1.5.16'
+    implementation 'com.muddzdev:styleabletoast:2.2.3'
+    implementation 'com.google.android.material:material:1.2.1'
+
+
+
+
+
 
 }

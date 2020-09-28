@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <resources>
+
+        <integer android:name1="btnplusview">1</integer>
+        <integer android:name="btnpluspos">2</integer>
+    </resources>-->
+
+</selector>

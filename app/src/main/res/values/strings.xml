@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">ServiceApp</string>
-    <string name="image">Start Bick Servicing</string>
-    <string name="hint">Ente 10 digits Mobile Number</string>
+    <string name="app_name">Serviceonway</string>
+    <string name="add">Add</string>
+    <string name="channel_name">mychannel</string>
+    <string name="cancel">Cancel</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="image">Service on way</string>
+    <string name="hint">Enter Mobile Number</string>
     <string name="hint1">Continue</string>
     <string name="hint2">40dp</string>
     <string name="hint3">Name</string>
@@ -10,10 +14,251 @@
     <string name="hint6">Enter Your Email Address</string>
     <string name="hint7">Referral code (optional)</string>
     <string name="signup">Signup</string>
+    <string name="text">Comprehensive 24-point inspection and expert diagnosis
+     and expert dilognois and vehicle health report</string>
+    <string name="text1">Brake pads drums cleaning for better braking</string>
+    <string name="text2">Ac system check up</string>
+
     <string name="next">Next</string>
     <string name="show">Show no</string>
     <string name="submit">submit</string>
+    <string name="submittext">Every car owner goes through the pains of servicing their cars through conventional garages.
+        Whether it is an authorized service station,
+        a multi-brand servicing station or your neighborhood garage,
+        a car owner has to take out time and visit their preferred service
+        provider. While the actual time spent on servicing a car maybe less
+        than two hours, a car owner loses a whole day in getting their car
+        serviced. Plus, none of the garages allow car owners to enter the
+        service bay to check their car while it gets serviced.
+        Such practices only increase the trust deficit and magnify
+        the promise-performance gap leading to unhappy car owners.</string>
+
+    <string name="submittext2">
+        The Automen solution is changing this situation by bringing the
+        service station to your doorstep. When you book a service with us,
+        our team visits your home or office with high end equipment, genuine
+        spare parts and fluids to service your car. We take the car for a 25
+        point road test to diagnose any drivability issues and visually
+        inspect the car for damage. We use computerized diagnostic devices
+        to interact with the on-board computer of a car and clear any system
+        errors. Thereafter, we service the car as per manufacturer recommended
+        guidelines incorporating best practices based on individual driving
+        patterns. Finally, we ensure that the car is germ free from the inside
+        and shining from the outside to make the car feel as good as new.
+        Try the Automen PitStop, take a seat and see all the action in
+        front of your eyes!
+        Our solution is customized for every car owner
+        and our team provides personalized care that increases
+        engine longevity and enhances driving pleasure.
+        We thrive on customer satisfaction and provide a
+        seamless experience to every car owner.
+
+
+    </string>
     <string name="otp">We have sent a "4 digit OTP" on</string>
     <string name="otp1">Please enter the OTP below to complete the verification process.</string>
     <string name="title_activity_maps">Map</string>
+    <string name="new11">Hello1</string>
+    <string name="Map1">Map</string>
+    <string name="new111">Hello2</string>
+    <string name="sk">sachin</string>
+
+    //car name list
+    <string name="car1">Diesel</string>
+    <string name="car2">Petrol</string>
+    <string name="car3">Ford</string>
+    <string name="car4">Ferrari</string>
+    <string name="car5">Cadillac</string>
+
+    <string name="imagec">image</string>
+
+    //Bike name
+    <string name="bike1">Royal Enfield</string>
+    <string name="bike2">Bajaj Pulsar</string>
+    <string name="bike3">Yamaha</string>
+    <string name="bike4">Honda Activa</string>
+    <string name="bike5">Cadillac</string>
+
+    //fuel
+    <string name="fuel1">Desial</string>
+    <string name="fule2">Petrol</string>
+
+    <string name="sk1">sachin1</string>
+    <string name="money">Your Account Blance is: rupays 0.00</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dis">inspection</string>
+    <string name="hiii">hello</string>
+    <string name="Rs">\u20B999.0</string>
+    <string name="ten">TODO</string>
+    <string name="make">Make</string>
+    <string name="model1">Model</string>
+    <string name="fuel">FuEL</string>
+    <string name="button1">Booknow</string>
+    <string name="next_activity">Next</string>
+    <string name="book_now">Book now</string>
+    <string name="todo1">TODO</string>
+    <string name="profile_and_setting">Profile and Setting</string>
+    <string name="show_text">Show text</string>
+    <string name="excellent_hotels_available1">Excellent hotels available</string>
+    <string name="excellent_hotels_available2">Excellent hotels available</string>
+    <string name="excellent_hotels_available">Excellent hotels available</string>
+    <string name="todo3">TODO</string>
+    <string name="food">Food</string>
+    <string name="hotal">hotal</string>
+    <string name="todo2">TODO</string>
+    <string name="Submit">sub</string>
+    <string name="car">car</string>
+    <string name="bike">bike</string>
+    <string name="service_on_way">Service on way</string>
+    <string name="car_services">Car Services</string>
+    <string name="bike_services1">Bike Services</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="button6">Booknow</string>
+    <string name="todo8">TODO</string>
+    <string name="bike_services">Bike Services</string>
+    <string name="todo123">TODO</string>
+    <string name="button9">Button</string>
+    <string name="Emergency">Emergency</string>
+
+    <string name="show_price">show price</string>
+    <string name="show_service">show service</string>
+    <string name="todo19">TODO</string>
+    <string name="include_service">NOT INCLUDE SERVICE</string>
+    <string name="shop_name">Shop name</string>
+    <string name="not_include_service1">   NOT INCLUDE SERVICE</string>
+    <string name="button">Button</string>
+    <string name="id1">ID</string>
+    <string name="view2">view</string>
+    <string name="date3">Date</string>
+    <string name="address">include-service</string>
+    <string name="ammount">Ammount</string>
+    <string name="price1">price</string>
+    <string name="bike_name1">bike-name</string>
+    <string name="todo13">TODO</string>
+    <string name="bike_name">bike-name</string>
+    <string name="price_pp1">price</string>
+    <string name="todo22">TODO</string>
+    <string name="textview_5">TextView</string>
+    <string name="todo11">TODO</string>
+    <string name="shop_name1">shop name</string>
+    <string name="todo99">TODO</string>
+    <string name="todo_1">TODO</string>
+    <string name="title_activity_user_map_2">Map</string>
+    <string name="Servic_Inc">SERVICE INC</string>
+    <string name="promocode1">Promocode</string>
+    <string name="apply">Apply1</string>
+    <string name="promocode2">PROMOCODE</string>
+    <string name="user_details">Booking Details
+    </string>
+    <string name="date1">Date</string>
+    <string name="textview5">TextView</string>
+    <string name="bookingid_b">BookingId</string>
+    <string name="textview4">TextView</string>
+    <string name="vechicle_b">Vechicle</string>
+    <string name="textview3">TextView</string>
+    <string name="maker_a">Maker</string>
+    <string name="textview2">TextView</string>
+    <string name="model">Model</string>
+    <string name="textview1">TextView</string>
+    <string name="price12">price</string>
+    <string name="total_price">Total Payable</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="like_us_on_facebook">Like us on Facebook</string>
+    <string name="follow_us_on_youtube">Follow us on Twitter</string>
+    <string name="price">price</string>
+    <string name="date_1">Date</string>
+    <string name="maker1">Maker</string>
+    <string name="bookingid1">BookingId</string>
+    <string name="vechicle1">Vechicle</string>
+    <string name="processing1">Processing</string>
+    <string name="shop_details">Shop Details</string>
+    <string name="promocode">Promocode</string>
+    <string name="invite">Invite And Earn Free Service</string>
+    <string name="invite1">Spread the word and earn free credits</string>
+    <string name="invite2">How does this work</string>
+    <string name="barcode">barcode</string>
+    <string name="barcode_apply">Promo code applied</string>
+    <string name="grandtotal">GrandTotal</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="service_on_way1">Service on way</string>
+    <string name="enter_the_otp">Enter the otp</string>
+    <string name="profile_info">Profile Info</string>
+    <string name="number">Number</string>
+    <string name="textview5_3">TextView</string>
+    <string name="textview6">TextView</string>
+    <string name="date7">Date</string>
+    <string name="bookingid">BookingId</string>
+    <string name="vechicle">Vechicle</string>
+    <string name="showdate">showdate</string>
+    <string name="textview_2">TextView</string>
+    <string name="bookinid">bookinid</string>
+    <string name="vechicleshow">vechicleshow</string>
+    <string name="textview_3">TextView</string>
+    <string name="model_2">Model</string>
+    <string name="maker">Maker</string>
+    <string name="processign">Processign</string>
+    <string name="shop_detail">Shop Detail</string>
+    <string name="email">Email</string>
+    <string name="todo">TODO</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="password">Password</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="new_include_service">Include Service</string>
+    <string name="new_include_service1">Not Include</string>
+    <string name="id">ID</string>
+    <string name="amount">Amount</string>
+    <string name="view">view</string>
+    <string name="date">Date</string>
+    <string name="include">include</string>
+    <string name="trans_id">Transaction id</string>
+    <string name="proccessign">proccessign</string>
+    <string name="textview">TextView</string>
+    <string name="booking_deatils">Booking Deatils</string>
+    <string name="shop_deatils">Shop Deatils</string>
+    <string name="include_service1">Include Service</string>
+    <string name="book_now1">Book now</string>
+    <string name="price2">price:</string>
+    <string name="_4_5km1">4.5KM</string>
+    <string name="distance_short">Sort By Distance</string>
+    <string name="setting">setting</string>
+    <string name="sortreating">Sort By Rating</string>
+    <string name="sortprice">Sort By Price</string>
+    <string name="sendnumber">We have sent six digit otp on your number</string>
+    <string name="enter_the_otp1">Enter The Otp</string>
+    <string name="load_more">Load More</string>
+    <string name="view_direction1">View</string>
+    <string name="title_activity_maps_second">Map</string>
+    <string name="message">Message</string>
+    <string name="send_message">Send Message</string>
+    <string name="contact">Contact</string>
+    <string name="contact_us_from">CONTACT US FROM</string>
+    <string name="your_contact_number">Your contact number</string>
+    <string name="submit1">Submit</string>
+    <string name="send_invite1">Send</string>
+    <string name="diesel">Diesel</string>
+    <string name="petrol">Petrol</string>
+    <string name="fuel2">FuEL</string>
+    <string name="mode2">Model</string>
+    <string name="make2">Make</string>
+    <string name="_8601502970">8601502970</string>
+    <string name="loc">title_location_permission</string>
+    <string name="loc1">text_location_permission</string>
+    <string name="ok">ok</string>
+    <string name="vehicle_parts">VEHICLE PARTS</string>
+    <string name="engine_oil">ENGINE OIL</string>
+    <string name="resend">Resend</string>
+    <string name="i_agree_to_terms_and_conditions">I agree to terms and conditions</string>
+    <string name="processing">Processing</string>
+    <string name="show_data1">show data</string>
+    <string name="not_include_service">Not include Service</string>
+    <string name="show_data">show data</string>
+    <string name="myNameHere"> DAINTING \u0026 PAINTING,</string>
+    <string name="value">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP1234567890
+    </string>
+
+
 </resources>

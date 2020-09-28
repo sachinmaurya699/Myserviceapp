@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:andorid="http://schemas.android.com/tools"
+
+         >
+
+    <group
+        android:id="@+id/group"
+        app:itemIconTint="@android:color/holo_red_dark"
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/distence"
+            android:title="@string/distance_short"
+
+            />
+
+        <item
+            android:id="@+id/reating"
+            android:title="@string/sortreating"
+
+
+            />
+        <item
+            android:id="@+id/newprice1"
+            android:title="@string/sortprice"
+
+            />
+
+    </group>
+
+    <item
+        android:id="@+id/map1"
+        android:title="@string/Map1"
+        >
+
+    </item>
+
+
+
+
+
+
+
+</menu>

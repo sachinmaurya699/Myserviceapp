@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviews"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#E91E63"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkboxs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:buttonTint="@android:color/holo_green_light"
+            android:checked="false"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0.2"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/images"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxs" />
+
+        <TextView
+            android:id="@+id/textviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/dis"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/textviewprice"
+            app:layout_constraintEnd_toEndOf="@+id/images"
+            app:layout_constraintStart_toStartOf="@+id/images"
+            app:layout_constraintTop_toBottomOf="@+id/images"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textviewprice"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center|bottom"
+            android:text="@string/Rs"
+            android:textColor="#ea710d"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textviews"
+            app:layout_constraintStart_toStartOf="@+id/textviews"
+            app:layout_constraintTop_toBottomOf="@+id/textviews" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
